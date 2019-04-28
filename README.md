@@ -36,6 +36,7 @@ The production site is located at [http://velo-vanier.s3-website-us-east-1.amazo
   - [vv-api](https://github.com/velo-vanier/vv-api): The Laravel database API 
     - You will need to [create a dockerhub account](https://hub.docker.com/)  
       and [install docker](https://hub.docker.com/welcome).
+    - Note: Running Docker on Windows is quite difficult. The easiest way requires a Pro version of Windows with compatible Intel processor.
     - You also need to install composer: 
     Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04
     MacOS: `brew install composer`
@@ -62,6 +63,7 @@ The production site is located at [http://velo-vanier.s3-website-us-east-1.amazo
     You will be able to see a landing page at [localhost](http://localhost)
     In order to make test requests you must obtain a token. JWT_USER_PASSWORD
     can be found in the .env file.
+    Note: Windows does not come with cURL
 
     ```
     curl -H 'Content-Type: application/json' -d '{ "password": "<JWT_USER_PASSWORD>"}' http://localhost/api/auth/login                                                                                       
