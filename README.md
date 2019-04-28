@@ -16,6 +16,7 @@ The production site is located at [http://velo-vanier.s3-website-us-east-1.amazo
   - [Google Drive](https://drive.google.com/drive/folders/16bpPqPLWkoC2b_yZw0GBflFc6RV5Aewn)
 
 2. Set up your dev environments
+
   Velo Vanier is split into two components. You do not need to set up both to 
   run the project. By default the front-end talks to an instance of the api 
   running on AWS
@@ -79,7 +80,7 @@ for credentials.
 You will also need to install [awscli](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) 
 
 - VV-UI
-The UI is build locally and deployed to an S3 bucket. To deploy changes
+The UI is built locally and deployed to an S3 bucket. To deploy changes
 make sure you're in your local directory on the correct branch with the 
 changes you want to deploy.
 
