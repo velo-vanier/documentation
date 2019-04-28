@@ -66,7 +66,7 @@ The production site is located at [http://velo-vanier.s3-website-us-east-1.amazo
     Note: Windows does not come with cURL
 
     ```
-    curl -H 'Content-Type: application/json' -d '{ "password": "<JWT_USER_PASSWORD>"}' http://localhost/api/auth/login                                                                                       
+    curl -H 'Content-Type: application/json' -d '{ "email": "test@example.com", "password": "<JWT_USER_PASSWORD>"}' http://localhost/api/auth/login                                                                              
     ```
     
     This token must be included as a header in all api requests.
