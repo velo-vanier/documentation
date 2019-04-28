@@ -72,7 +72,7 @@ The production site is located at [http://velo-vanier.s3-website-us-east-1.amazo
     Authentication: Bearer <token>
     ```
 
-3. Deploying changes 
+## Deploying changes 
 The production website is hosted on AWS using the account provided and managed 
 by the Random Hacks of Kindenss staff. Contact [Brett](https://github.com/tackaberry) 
 for credentials.
@@ -90,10 +90,14 @@ aws s3 sync build s3://velo-vanier
 ```
 
 - VV-API
+
 _DISCLAIMER:_ I have not run this myself to confirm it works 
+
 This component can be deployed with the [deploy.sh](https://github.com/velo-vanier/vv-api/blob/master/deploy.sh)
 script. This script requires the following arguments:
 
-PROFILE -->
-REPO_URL --> docker hub repository
-REPO_NAME --> docker hub repository name
+```
+PROFILE:
+REPO_URL: docker hub repository
+REPO_NAME: docker hub repository name
+```
